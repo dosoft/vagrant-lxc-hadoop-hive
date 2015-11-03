@@ -1,12 +1,14 @@
 # vagrant-lxc-hadoop-hive
-Scripts to create Vagrant LXC container with hadoop &amp; hive
+Scripts to create Vagrant LXC container with hadoop &amp; hive (single node)
 
 Hadoop version: 2.6.0
 Hive version: 1.2.1
 
 Base box: olegd/centos-6-64-lxc (Vagrant LXC box, Centos 6.x)
 
-## How to use
+## How to create box
+
+Install vagrant & vagrant-lxc (https://github.com/fgrehm/vagrant-lxc)
 
 Run ./build.sh to perform the following steps:
 
@@ -15,7 +17,7 @@ Run ./build.sh to perform the following steps:
 3. Configure hadoop to store data in the ~/vagrant directory instead of default /tmp
 4. Configure password-less ssh access
 
-Resulting box will be created in the target subdirectory
+Resulting box will be generated in the target subdirectory
 
 ## Atlas
 
