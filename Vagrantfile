@@ -23,6 +23,10 @@ tar xfz apache-hive-1.2.1-bin.tar.gz
 chown -R vagrant:vagrant apache-hive-1.2.1-bin
 mv apache-hive-1.2.1-bin /usr/local/
 rm apache-hive-1.2.1-bin.tar.gz
+
+# Increase limits
+sed -i "s/1024/32000/" /etc/security/limits.d/90-nproc.conf
+
 SCRIPT
 
 $setup = <<SCRIPT
